@@ -2,7 +2,7 @@ import 'dart:io';
 
 Future main() async {
   var server = await HttpServer.bind(
-    InternetAddress.loopbackIPv4,
+    InternetAddress.anyIPv4,
     4040,
   );
 
@@ -13,3 +13,5 @@ Future main() async {
     await request.response.close();
   }
 }
+
+

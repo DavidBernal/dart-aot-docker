@@ -1,9 +1,0 @@
-version: '3'
-services:
-  app:
-    image: debian
-    ports:
-      - '4040:4040'
-    volumes:
-      - .:/app
-    command: /app/main.exe
